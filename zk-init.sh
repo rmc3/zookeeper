@@ -2,7 +2,6 @@
 
 ZK=$1
 MYID=1
-IPADDRESS=`ip -4 addr show scope global dev eth0 | grep inet | awk '{print \$2}' | cut -d / -f 1`
 
 cd /tmp/zookeeper
 if [ -n "$ZK" ] 
